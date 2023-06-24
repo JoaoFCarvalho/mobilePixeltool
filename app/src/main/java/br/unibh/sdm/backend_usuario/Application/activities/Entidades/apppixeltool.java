@@ -11,7 +11,10 @@ public class apppixeltool implements Serializable{
     private String descricao;
     private Date dataCriacao;
 
-    public apppixeltool(){
+    public apppixeltool(String _codigo, String _nome, String _descricao, Date _dataCriacao){
+
+        setCodigo(_codigo); setNome(_nome); setDescricao(_descricao); setDataCriacao(_dataCriacao);
+
     }
 
     public String getCodigo() {
@@ -33,15 +36,15 @@ public class apppixeltool implements Serializable{
         this.codigo = codigo;
     }
 
-    public void setNome(String nome){
+    private void setNome(String nome){
         this.nome = nome;
     }
 
-    public void setDescricao(String descricao){
+    private void setDescricao(String descricao){
         this.descricao = descricao;
     }
 
-    public void setDataCriacao(Date dataCriacao){
+    private void setDataCriacao(Date dataCriacao){
         this.dataCriacao = dataCriacao;
     }
 
